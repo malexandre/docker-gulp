@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk update && apk add nodejs && rm -rf /var/cache/apk/*
+RUN apk update && apk add nodejs git && rm -rf /var/cache/apk/*
 RUN npm install -g bower gulp
 
 ADD . /code
